@@ -1,0 +1,20 @@
+How to Solve the Problem 
+
+1. Create a hashmap with all the roman numerals and their designated value
+
+2. create a tracker for the sum (for integer value) and the index 
+
+3. loop through the string with i (index)
+
+4. In the loop, check if the index < length of string - 1 and if the next value of the string has 
+a higher value in the hashmap than the current value of the string
+    - if it does, then the sum would be += (higher value - lower value) from the hashmap 
+    - the index would need to jump 2 spots ahead since we are calculating two positions
+
+5. Else, we just add to the sum like usual with the value in the hashmap of current index, and then 
+the index would just jump 1 spot like usual
+
+6. return the sum 
+
+Time Complexity: O(n)
+Space Complexity: O(1) 
