@@ -12,3 +12,6 @@ and the current element
 
 5. return the current tracker 
 
+Time Complexity: O(n)
+Space Complexity: O(1)
+
