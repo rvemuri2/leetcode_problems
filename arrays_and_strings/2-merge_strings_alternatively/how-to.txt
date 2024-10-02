@@ -1,0 +1,16 @@
+How to Solve the Problem 
+
+1. Initialize an empty string and two pointers
+
+2. go through each string and add to the empty string each char of each string, starting with 
+the first pointer and then the second pointer
+
+Note: First pointer points to first string, second pointer points to second string
+
+3. Increment the two pointers, and do step 2 and 3 until first pointer reaches the end and second reaches the end
+(whichever comes first)
+
+4. If one of the strings wasn't completed in terms of the pointer reaching the end, add the rest of it to the new string
+
+Time Complexity: O(n + m) -> O(n)
+Space Complexity: O(n + m) -> O(n)
