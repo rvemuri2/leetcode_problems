@@ -1,0 +1,14 @@
+How to solve this problem
+
+1. First, initialize trackers for the element in array and minimum number
+
+2. iterate through the array, take the absolute value of each element
+
+3. check if the absolute value < min_number, if it is, then make that abs(element) the min_number
+and the curr to be the element
+
+4. if there is a duplicate or just a negative inverse of the number, then take the max value of the current tracker
+and the current element
+
+5. return the current tracker 
+
