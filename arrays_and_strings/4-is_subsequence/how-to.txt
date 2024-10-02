@@ -1,0 +1,17 @@
+How to solve the problem
+
+1. Initialize two pointers and a count tracker
+
+2. use a while loop, iterate through both strings
+
+3. if two characters of both strings are matching, then we increment the pointers and the count
+
+4. Else, we only increment the second pointer
+
+5. After the loop, we can return True if the count tracker is equal to the length of the first string, 
+what this tells us is that the string was counted for all the way through and proved to be a subsequence
+
+6. else we can return false
+
+Time Complexity: O(n)
+Space Complexity: O(1)
