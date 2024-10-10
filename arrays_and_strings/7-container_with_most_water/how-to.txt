@@ -14,3 +14,6 @@
 we do same steps from 4-6 except now we decrement left pointer 
 
 8. return the result variable
+
+Time Complexity: O(n)
+Space Complexity: O(1)
