@@ -1,0 +1,12 @@
+1. Use a two pointer approach, initializing i and j to be 0 and 1 respectively
+
+2. iterate through the loop while j doesn't go over the end
+
+3. In the iteration, check if prices[j] > prices[i] and if it is, calculate
+max of the difference and the result itself. This calculation store it in result variable
+
+4. Move the j pointer
+
+5. Otherwise, tail the i pointer to the j pointer (i = j) and increase the j pointer by 1
+
+6. return the result as stated in step 3.
