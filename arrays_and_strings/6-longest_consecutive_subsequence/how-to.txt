@@ -1,0 +1,20 @@
+1. set a count and temp variable for getting length of longest subsequence 
+and the temp variable for the element in list
+
+2. Make the list into a set so that we avoid duplicate values
+
+3. set a base case so that if it is empty array, we return 0
+
+4. iterate through the set, set the temp as the curr element in array
+
+5. if the number - 1 is not in the array, then we know that it is the root of the sequence, 
+so if that is the case, we can start a streak variable and assign it as 1
+
+6. while the number + 1 in the set, we can add 1 to the streak variable and increase temp by 1
+
+7. after exiting the while loop, we get the max of the count and the curr element variable 
+
+8. after the first loop, we just return the count 
+
+Space Complexity: O(n)
+Time Complexity: O(n)

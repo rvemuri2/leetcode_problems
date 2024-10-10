@@ -10,3 +10,6 @@ max of the difference and the result itself. This calculation store it in result
 5. Otherwise, tail the i pointer to the j pointer (i = j) and increase the j pointer by 1
 
 6. return the result as stated in step 3.
+
+Space Complexity: O(1)
+Time Complexity: O(n)
