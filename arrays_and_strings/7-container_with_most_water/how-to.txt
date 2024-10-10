@@ -1,0 +1,16 @@
+1. Use a two pointer approach, iniitialize i and j to 0 and len(height) - 1
+
+2. set a result variable to 0
+
+3. while(i < j), we want to see if i pointer is less than j pointer, 
+
+4. If it is, then we calculate the height of the lower element * (j-1) which is the width
+
+5. Get the max of that result with the calculation and result (stored in res)
+
+6. Increment the right pointer 
+
+7. Do similar steps of 4-6 except this time it's if j pointer <= i pointer, and if so 
+we do same steps from 4-6 except now we decrement left pointer 
+
+8. return the result variable
