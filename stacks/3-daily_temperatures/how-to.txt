@@ -1,0 +1,15 @@
+1. Initialize a stack and also a result array with 0's (total of length of the temperatures list)
+
+2. loop through the temperatures array, 
+and we want to see if the stack is not empty and to note, we are going to append the index (i or r in this case) to the stack, not the actual value
+
+3. In that same if condition we want to see if the temperatures[stack[-1]] < current temperature which is temperatures[r]
+
+4. If they are, we want to pop the index from the stack
+
+5. Then, we want to fill in the index of the answer of the value that just got popped to be r-l since we want to fill it in with the distance
+
+6. After the loop, we just want to return the answer array
+
+Time Complexity: O(n)
+Space Complexity: O(n)
