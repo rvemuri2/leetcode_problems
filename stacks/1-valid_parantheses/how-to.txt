@@ -1,0 +1,15 @@
+1. Create a hashmap of all the ending parantheticals and map it to the beginning of the parenthetical
+
+2. use a stack, initialize it
+
+3. loop through the string, first identify if it is an opening bracket
+
+4. If it is, then we want to go ahead and add it to the stack
+
+5. if it is a closing bracket, then we want to check if the stack is empty, if it is then we know that it's not valid
+
+6. If there are elements in the stack, then we want to check if that element corresponds to the correct closing bracket, i.e: if it is ) in str, then the top of the stack should be (
+
+7. If it doesn't correlate, then we can return False
+
+8. After the loop, if the length of the stack > 0, we can say that it's not valid, if it is 0, then it is valid parantheses
