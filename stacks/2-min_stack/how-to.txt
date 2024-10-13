@@ -1,0 +1,14 @@
+1. Initialize two stacks, one for the minimum, and one in general for the problem
+
+2. for the push method: we want to append to the general stack the value.
+Next, if the min stack is empty, we can append the value.
+If the min stack is not empty, we should append the minimum value between the top of the stack and the value getting passed in the function
+
+3. For pop, we just pop from both the stacks
+
+4. for top, we just look at the last element of the general stack
+
+5. For getMin, we just look at last element of min stack 
+
+Time Complexity: O(1)
+Space Complexity: O(n)
