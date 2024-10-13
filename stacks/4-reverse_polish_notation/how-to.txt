@@ -1,0 +1,15 @@
+1. Initialize a stack
+
+2. loop through the tokens, and check if it is an operator
+
+3. If it is an operator, pop the last two numbers from the stack
+
+4. If it is addition or multiplication, we can just add or multiply the two numbers and then add it back to the stack 
+
+5. If it is division or subtraction, we can divide or subtract the second number that is popped by the first number
+
+Note: Round down in division, so use either Math.floor or just type cast int in python
+
+6. if it is a number and not an operator, just add it to the stack
+
+7. Return the first number of the stack
