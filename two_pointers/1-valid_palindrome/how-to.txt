@@ -1,0 +1,12 @@
+1. You could use a clean text string, where you combine everything into one string that is alpha-numeric
+
+2. Then, you can initialize two pointers
+
+3. You could also make the clean_text string lowercase
+
+4. While the right pointer is greater than that of the left pointer
+
+5. if the value of the pointers don't match, it's instantly false, 
+increment left pointer, decrement right pointer regardless
+
+6. If we get through the loop we return True
