@@ -1,0 +1,6 @@
+1. Understand and know how counters work
+
+2. initialize two counters one for s and one for t
+
+3. Compare the two counters, and if they are same, return True,
+if not, return False
