@@ -4,3 +4,6 @@
 
 3. Compare the two counters, and if they are same, return True,
 if not, return False
+
+Time Complexity: O(1)
+Space Complexity: O(n)
