@@ -7,3 +7,6 @@
 4. If it is, then we can return the index i and h[target-nums[i]]
 
 5. Else, we can add it to the hashmap through h[nums[i]] = i, with the index i being the value and the value in nums array being the key
+
+Time Complexity: O(n)
+Space Complexity: O(n)
