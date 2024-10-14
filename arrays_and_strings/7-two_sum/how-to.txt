@@ -1,0 +1,9 @@
+1. Initialize a hashmap
+
+2. iterate through the nums array
+
+3. Check if target - nums[i] is in the hashmap
+
+4. If it is, then we can return the index i and h[target-nums[i]]
+
+5. Else, we can add it to the hashmap through h[nums[i]] = i, with the index i being the value and the value in nums array being the key
