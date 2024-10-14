@@ -7,3 +7,6 @@
 4. If it is, then we know there are no duplicates
 
 5. if they are not the same, we know there are duplicates
+
+Time Complexity: O(1)
+Space Complexity: O(n)
