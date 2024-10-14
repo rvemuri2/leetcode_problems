@@ -1,0 +1,9 @@
+1. We can use set to get only unique values
+
+2. Initialize a set of the nums array
+
+3. Check if the length of the set is equal to the length of the nums array
+
+4. If it is, then we know there are no duplicates
+
+5. if they are not the same, we know there are duplicates
