@@ -13,3 +13,6 @@ and move the left pointer
 5. we set the result to the max of the result and the window
 
 6. In the outer loop, we return the result
+
+Time Complexity: O(n)
+Space Complexity: O(n)
