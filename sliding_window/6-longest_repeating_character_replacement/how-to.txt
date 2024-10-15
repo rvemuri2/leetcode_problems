@@ -1,0 +1,13 @@
+1. Initialize left pointer, hashmap, result for window length
+
+2. Loop through the string
+
+3. add the character to the hashmap
+
+4. check if the window - max value of the hashmap is bigger than k,
+if it is, then we need to subtract that character's value by 1
+and move the left pointer
+
+5. we set the result to the max of the result and the window
+
+6. In the outer loop, we return the result
