@@ -8,3 +8,6 @@ put the difference as the stock price and check if it's max value
 4. Otherwise, we want to move the left pointer to the right pointer
 
 5. return the stock value
+
+Time Complexity: O(n)
+Space Complexity: O(1)
