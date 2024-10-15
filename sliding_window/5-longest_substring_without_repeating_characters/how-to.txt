@@ -10,3 +10,6 @@ and increment the left pointer
 5. add the element to the set
 
 6. return the count
+
+Time Complexity: O(n)
+Space Complexity: O(1)
