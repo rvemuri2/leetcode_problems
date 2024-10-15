@@ -1,0 +1,12 @@
+1. Initialize left pointer, count, and set 
+
+2. Loop through the array
+
+3. when there are elements in the set already, keep removing them
+and increment the left pointer
+
+4. Take the max of the count and the window
+
+5. add the element to the set
+
+6. return the count
