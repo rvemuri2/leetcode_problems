@@ -1,0 +1,12 @@
+1. Initialize left pointer, length, and sum
+
+2. Loop through the nums array
+
+3. add the element to the sum
+
+4. check if the sum >= target and if it is (use while loop), 
+get the minimum length of the length and the window,
+subtract the sum with the element
+increase left pointer
+
+5. after loop, return 0 if the length is same value as initial (infinity), otherwise return the length
