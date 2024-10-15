@@ -1,0 +1,8 @@
+1. Initialize an array and the sum
+
+2. loop through nums array, add the element to the sum, and append each sum total to the array
+
+3. in the SumRange, we want to return arr[right] - arr[left - 1]
+
+4. in this return statement, we want to make sure left value > 0 otherwise, we can get negative values
+
