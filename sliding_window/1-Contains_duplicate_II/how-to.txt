@@ -10,3 +10,6 @@ and increment the left pointer
 5. Add the element of the nums array to the set
 
 6. return False outside the loop
+
+Time Complexity: O(n)
+Space Complexity: O(n)
