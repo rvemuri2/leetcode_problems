@@ -1,0 +1,11 @@
+1. Initialize left pointer, count, and sum variables
+
+2. loop through the array
+
+3. add the element to sum variable
+
+4. If the window is greater than k, subtract the sum by the element and increase left pointer
+
+5. If the window is equal to k, check if the average >= threshold, and if it is increase count variable
+
+6. return the count outside the loop
