@@ -1,0 +1,12 @@
+1. Initialize a left pointer and a set
+
+2. loop through the nums array
+
+3. if the window is greater than k, then remove the left pointer element from the set
+and increment the left pointer
+
+4. If the element exists in the set, then we return true
+
+5. Add the element of the nums array to the set
+
+6. return False outside the loop
