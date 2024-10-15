@@ -10,3 +10,6 @@ subtract the sum with the element
 increase left pointer
 
 5. after loop, return 0 if the length is same value as initial (infinity), otherwise return the length
+
+Time Complexity: O(n)
+Space Complexity: O(1)
