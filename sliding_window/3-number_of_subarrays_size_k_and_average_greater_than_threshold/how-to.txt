@@ -9,3 +9,6 @@
 5. If the window is equal to k, check if the average >= threshold, and if it is increase count variable
 
 6. return the count outside the loop
+
+Time Complexity: O(n)
+Space Complexity: O(n)
