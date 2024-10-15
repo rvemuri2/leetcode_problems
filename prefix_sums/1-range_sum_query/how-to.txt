@@ -6,3 +6,5 @@
 
 4. in this return statement, we want to make sure left value > 0 otherwise, we can get negative values
 
+Time Complexity: O(n)
+Space Complexity: O(1)
