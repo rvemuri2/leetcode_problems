@@ -1,0 +1,7 @@
+1. store the sum of the list in variable
+2. store the left sum in variable
+3. loop through the nums array, 
+4. calculate rightsum by getting the totalsum - current element - leftsum
+5. if the left sum == right sum, then return the index
+6. add the element to the left sum
+7. if there's no match, return -1
