@@ -6,3 +6,6 @@
 6. If it is, then increment res variable to the value of the key of sum - k
 7. else, just increment the count of the sum key in hashmap
 8. return the res variable
+
+Time Complexity: O(n)
+Space Complexity: O(n)
