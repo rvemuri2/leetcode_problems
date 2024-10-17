@@ -1,0 +1,8 @@
+1. Initialize sum, res, hashmap variables 
+2. Make the "0" key have the value of 1 in hashmap
+3. loop through the nums array
+4. add the element of the array to the sum variable
+5. Check if the sum variable - k value is in the key of hashmap
+6. If it is, then increment res variable to the value of the key of sum - k
+7. else, just increment the count of the sum key in hashmap
+8. return the res variable
