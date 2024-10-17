@@ -1,0 +1,12 @@
+1. We are going to be using a prefix, postfix, and combine into one results array
+2. Initialize the result array with [1] * length of the nums array
+3. initialize the prefix to 1
+4. loop through the array: 
+    - For the prefix operation, we want to first make the element of the result array to be the prefix variable
+    - We then update the prefix variable by multiplying it by the element in nums array
+5. The array should be like [1, 1, 2, 6] if the example array was: [1, 2, 3, 4]
+6. Initialize post variable to 1
+7. Start the loop from the other side of the array (in decreasing order):
+    - multiply the element of the arr with the post variable
+    - multiply the post variable with the nums variable
+8. return the result array
