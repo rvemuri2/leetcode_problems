@@ -10,3 +10,6 @@
     - multiply the element of the arr with the post variable
     - multiply the post variable with the nums variable
 8. return the result array
+
+Space Complexity: O(1) -> Because result array does not count as extra space
+Time Complexity: O(n)
