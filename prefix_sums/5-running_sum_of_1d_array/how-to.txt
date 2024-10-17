@@ -1,0 +1,5 @@
+1. Initialize an array
+2. the first element of the array should be the first element in the nums array
+3. Loop through the array starting at 2nd index
+4. for the element in the array, add the previous element and the current element in nums
+5. return the array
