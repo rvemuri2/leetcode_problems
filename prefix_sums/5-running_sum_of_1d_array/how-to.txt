@@ -3,3 +3,6 @@
 3. Loop through the array starting at 2nd index
 4. for the element in the array, add the previous element and the current element in nums
 5. return the array
+
+Time Complexity: O(n)
+Space Complexity: O(n)
