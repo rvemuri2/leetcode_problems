@@ -9,3 +9,6 @@ case of the first element being a multiple of 6, then the length is not >= 2, so
 why? Because we want to see if the remainder is already in the hashmaps, if it is and if the index >= 2, we know that it is a multiple of 6
 7. use an else if and determine if the i (index) - h[r] (which is the index value in hash) then, returns True
 8. we can return False in the outer loop
+
+Time Complexity: O(n)
+Space Complexity: O(n)
