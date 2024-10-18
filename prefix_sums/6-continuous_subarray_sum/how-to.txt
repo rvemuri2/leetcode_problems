@@ -1,0 +1,11 @@
+1. Initialize a hashmap and sum variable
+2. We want to set h[0] = -1 because we want to check for the edge
+case of the first element being a multiple of 6, then the length is not >= 2, so that's why we initialize it to -1 as value
+
+3. Loop through the nums array
+4. add the element to the sum variable
+5. initialize a variable, r, set it equal to the sum variable mod by k.
+6. If the r variable is not in the hashmap, then we can go ahead and add h[r] = i into the hashmap
+why? Because we want to see if the remainder is already in the hashmaps, if it is and if the index >= 2, we know that it is a multiple of 6
+7. use an else if and determine if the i (index) - h[r] (which is the index value in hash) then, returns True
+8. we can return False in the outer loop
