@@ -1,0 +1,8 @@
+1. Initialize left pointer, result, count, and a list with vowels
+2. Loop through the string
+3. if the char is a vowel, increment count
+4. if the window is greater than k, increment left pointer, incidentally
+before the incrementation, if the left pointer element is a vowel, then we
+need to decrement the count variable
+5. Set the result variable to the max of result and count variable
+6. return the result variable
