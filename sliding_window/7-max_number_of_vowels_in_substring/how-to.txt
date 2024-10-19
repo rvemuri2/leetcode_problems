@@ -6,3 +6,6 @@ before the incrementation, if the left pointer element is a vowel, then we
 need to decrement the count variable
 5. Set the result variable to the max of result and count variable
 6. return the result variable
+
+Time Complexity: O(n)
+Space Complexity: O(1) -> Vowels are constant
