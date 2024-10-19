@@ -1,0 +1,7 @@
+1. define a prev for the previous value and assign curr to head
+2. while curr is not null, we want to be able to reverse the list
+3. store temp variable for curr.next 
+4. set the next value to the prev (this is the reversing part)
+5. then we set the previous value to the current value 
+6. then we set the current value to the temp variable 
+
