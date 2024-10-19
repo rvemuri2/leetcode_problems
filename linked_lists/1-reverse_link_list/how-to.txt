@@ -5,3 +5,5 @@
 5. then we set the previous value to the current value 
 6. then we set the current value to the temp variable 
 
+Time Complexity: O(n)
+Space Complexity: O(1)
