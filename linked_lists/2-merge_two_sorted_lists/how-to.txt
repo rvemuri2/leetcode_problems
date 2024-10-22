@@ -1,0 +1,10 @@
+1. Create a dummy listNode and a curr pointer that points to that dummy listNode
+2. loop through both lists 
+3. if the value in one list is smaller than other list, point the next pointer to that value 
+and increase the pointer of the list with that value
+4. for each iteration, the curr pointer should move
+5. if it's equal to or if the other value is smaller in another list, then do the same except for the other list
+6. After the loop, if there are still elements remaining in one of the lists, then
+add all those elements to the curr.next pointer 
+
+
