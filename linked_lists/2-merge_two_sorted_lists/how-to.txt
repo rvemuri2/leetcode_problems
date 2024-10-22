@@ -7,4 +7,5 @@ and increase the pointer of the list with that value
 6. After the loop, if there are still elements remaining in one of the lists, then
 add all those elements to the curr.next pointer 
 
-
+Time Complexity: O(n + m) -> O(n)
+Space Complexity: O(1)
