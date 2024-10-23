@@ -1,0 +1,9 @@
+1. Use fast and slow pointer technique to get the midpoint
+2. loop through the LL
+3. increment fast pointer as fast.next.next and the slow as just slow.next
+4. Next, reverse the second half (right side) of the LL
+5. Then, we want to just the traverse the two halves until the right pointer 
+gets to the midpoint
+6. Loop through using while(right)
+7. if the two values are not equal, then return false
+8. Outside the loop, return true
