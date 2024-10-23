@@ -7,3 +7,6 @@ gets to the midpoint
 6. Loop through using while(right)
 7. if the two values are not equal, then return false
 8. Outside the loop, return true
+
+Time Complexity: O(n)
+Space Complexity: O(1)
