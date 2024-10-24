@@ -1,0 +1,8 @@
+1. Define fast and slow pointer
+2. traverse through the LL (while the fast and fast.next pointers are not null)
+3. if the slow pointer is equal to the fast pointer, break out of the loop
+4. Now, we need to adjust for the case if there is no cycle
+5. If the fast and fast.next pointers are null, then we know that there is no cycle, so we return none
+6. Use another slow pointer call it slow2 and put it at the head
+7. Loop through the LL until slow2 is equal to slow pointer
+8. return slow2
