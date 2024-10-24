@@ -2,3 +2,6 @@
 2. Reverse second half of LL
 3. set two pointers to head and prev
 4. Swap the values of each pointer as you go to the next
+
+Time Complexity: O(n)
+Space Complexity: O(1)
