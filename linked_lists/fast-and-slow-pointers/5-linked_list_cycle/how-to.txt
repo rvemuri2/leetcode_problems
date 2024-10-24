@@ -2,3 +2,6 @@
 2. traverse through the LL (while the fast and fast.next pointers are not null)
 3. if the slow pointer is equal to the fast pointer, return True
 4. In the outer loop return false
+
+Time Complexity: O(n)
+Space Complexity: O(1)
