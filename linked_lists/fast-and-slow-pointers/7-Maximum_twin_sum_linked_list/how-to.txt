@@ -1,0 +1,5 @@
+1. Find the middle of the LL using fast and slow pointers
+2. Reverse the second half of the LL
+3. Use two pointer technique at the head and prev
+4. Take the sum of the two pointers and keep the max value
+5. return the max value
