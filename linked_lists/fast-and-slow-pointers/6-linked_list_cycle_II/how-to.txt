@@ -6,3 +6,6 @@
 6. Use another slow pointer call it slow2 and put it at the head
 7. Loop through the LL until slow2 is equal to slow pointer
 8. return slow2
+
+Time Complexity: O(n)
+Space Complexity: O(1)
