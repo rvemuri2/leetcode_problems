@@ -1,3 +1,6 @@
 1. Define a fast and slow pointer
 2. traverse through the LL (while the fast and fast.next pointers are not null)
 3. in the end, just return the slow pointer outside the loop
+
+Time Complexity: O(n)
+Space Complexity: O(1)
