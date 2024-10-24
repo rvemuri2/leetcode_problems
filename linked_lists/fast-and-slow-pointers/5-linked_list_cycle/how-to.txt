@@ -1,0 +1,4 @@
+1. Define a fast and slow pointer
+2. traverse through the LL (while the fast and fast.next pointers are not null)
+3. if the slow pointer is equal to the fast pointer, return True
+4. In the outer loop return false
