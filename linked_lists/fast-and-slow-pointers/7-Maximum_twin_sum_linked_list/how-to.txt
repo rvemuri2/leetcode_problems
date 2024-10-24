@@ -3,3 +3,6 @@
 3. Use two pointer technique at the head and prev
 4. Take the sum of the two pointers and keep the max value
 5. return the max value
+
+Time Complexity: O(n)
+Space Complexity: O(1)
