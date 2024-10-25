@@ -7,3 +7,6 @@
 7. You will get to the point where the next of the left pointer is the one you want to delete
 8. Delete the node by using left.next = left.next.next
 9. return dummy.next (since we don't want the 0 to be included)
+
+Time Complexity: O(n)
+Space Complexity: O(1)
