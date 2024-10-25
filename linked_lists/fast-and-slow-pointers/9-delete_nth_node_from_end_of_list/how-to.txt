@@ -1,0 +1,9 @@
+1. Create a dummy node, set it to 0, set it at the beginning of the LL
+2. set two pointers left and right. Left at dummy, right at head
+3. loop through the LL, n > 0 and right
+4. keep pushing right to the next
+5. decrement n
+6. Use another loop to just go through and push the left and right pointers until right is null
+7. You will get to the point where the next of the left pointer is the one you want to delete
+8. Delete the node by using left.next = left.next.next
+9. return dummy.next (since we don't want the 0 to be included)
