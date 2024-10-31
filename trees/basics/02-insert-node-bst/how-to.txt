@@ -1,0 +1,4 @@
+1. Base Case, if the root is null then we insert it there, as we return a TreeNode value
+2. If the root val is less than val, then we go to the right and recurse there
+3. If the root val is greater than val, then we go to the left and recurse there
+4. Once we are done, we return the root
