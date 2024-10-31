@@ -9,3 +9,6 @@ i.e: if root.left is null, we return root.right
 8. For 2 children: we get the smallest value in the right subtree (findMin(root.right))
 9. set that to a variable, and we set the root value to that variable's value also
 10. Then, we can recurse the root.right with the min value (deleteNode(root.right, curr.val))
+
+Space Complexity: O(1)
+Time Complexity: O(h) -> O(log n) in BST
