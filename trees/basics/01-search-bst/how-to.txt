@@ -1,0 +1,4 @@
+1. Base case if the root node is null, then we return null
+2. If the target > root value, then we want to go right, so we use recursion to go right (root.right)
+3. If the target < root.value, then we want to go left, using recursion
+4. But if the target == root.value, then we return the root node 
