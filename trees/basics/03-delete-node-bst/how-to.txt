@@ -1,0 +1,11 @@
+1. In this, we will solve for the case of 0-1 children, and 2 children
+2. Create a function for finding the min node in BST, basically the leftmost node
+3. in the main function, base case is if root is null, then we return null
+4. if the key > root.val, then we recurse root.right
+5. if the key < root.val, then we recurse root.left
+6. otherwise, we now check if it is 0 or 1 children
+7. If it is, we check if the root.left or root.right are null separately, if either of them are, then we return the other
+i.e: if root.left is null, we return root.right
+8. For 2 children: we get the smallest value in the right subtree (findMin(root.right))
+9. set that to a variable, and we set the root value to that variable's value also
+10. Then, we can recurse the root.right with the min value (deleteNode(root.right, curr.val))
