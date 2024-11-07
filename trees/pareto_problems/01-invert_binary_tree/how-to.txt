@@ -1,0 +1,4 @@
+1. Use dfs approach
+2. do a pre-order traversal
+3. For the val, you just want to switch the value of node.right and node.left
+4. return the root after the recursion
