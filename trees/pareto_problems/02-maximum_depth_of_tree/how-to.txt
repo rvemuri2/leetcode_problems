@@ -1,0 +1,6 @@
+1. Use a BFS approach
+2. have a level variable to keep track of the depth
+3. increment the level after the for loop, but in the while loop
+- this causes the level to increment by 1 after both the left side and right side are appended into the queue
+4. return the level
+
