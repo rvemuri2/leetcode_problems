@@ -4,3 +4,13 @@
 - this causes the level to increment by 1 after both the left side and right side are appended into the queue
 4. return the level
 
+
+
+for DFS: 
+
+1. set base case of returning 0 if no root
+2. for each iteration, set the left and right to 
+the recursive call of the function to root.left and root.right
+respectively
+3. The height should be 1 + max(left, right) 
+4. return the height
