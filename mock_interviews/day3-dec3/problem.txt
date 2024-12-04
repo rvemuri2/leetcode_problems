@@ -1,0 +1,30 @@
+You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
+
+Return the length of the longest substring containing the same letter you can get after performing the above operations.
+
+"ABAB"
+k = 2
+output -> 4
+
+
+Notes:
+
+"AAAB" k = 1
+{A: 3, B: 1}
+
+
+Window -> Container (Heap / Hashmap / array / strings)
+
+Initialize Window
+Fill with values
+
+l = 0
+for r in range(end_of_window, N):
+    Add Right Element to window
+    
+    Check if Window is Invalid State:
+        While invalid
+            Remove left most element from window
+    
+    ans = max(ans, l + r +1)
+return ans

@@ -1,11 +1,9 @@
 from collections import Counter
 def WordOccurrence(sentence: str) -> dict: 
 
-
-    words = Counter()
+    words = Counter() 
 
     result = sentence.split(" ")
-
 
 # a 
 # ab.
@@ -23,6 +21,7 @@ def WordOccurrence(sentence: str) -> dict:
     return words
 
 print(WordOccurrence("a ab. abc"))
+
 
 # Time Complexity: O(n * m ) = O(N)
 # Space Complexity: O(N)
