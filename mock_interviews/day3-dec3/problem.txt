@@ -16,7 +16,7 @@ Notes:
 Window -> Container (Heap / Hashmap / array / strings)
 
 Initialize Window
-Fill with values
+Fill with values depending on the problem
 
 l = 0
 for r in range(end_of_window, N):
@@ -25,6 +25,7 @@ for r in range(end_of_window, N):
     Check if Window is Invalid State:
         While invalid
             Remove left most element from window
+            increment Left pointer
     
     ans = max(ans, l + r +1)
 return ans
