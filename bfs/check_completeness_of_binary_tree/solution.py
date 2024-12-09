@@ -4,8 +4,12 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from collections import deque
+from typing import Optional
+
+
 class Solution:
-    def isCompleteTree(self, root: Optional[TreeNode]) -> bool:
+    def isCompleteTree(self, root: Optional[TreeNode]) -> bool: # type: ignore
 
         q = deque([root])
 
