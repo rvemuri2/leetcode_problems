@@ -18,4 +18,7 @@ class ShoppingCart:
         return self.items
 
     def get_total_price(self, price_map):
-        pass
+        total_price = 0
+        for item in self.items:
+            total_price += price_map.get(item, 5.0)
+        return total_price
