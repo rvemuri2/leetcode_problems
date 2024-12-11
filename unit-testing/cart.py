@@ -2,11 +2,13 @@ from typing import List
 
 class ShoppingCart:
 
-    def __init__(self) -> None:
+    def __init__(self, max_size: int) -> None:
         self.items: List[str] = []
-        pass 
+        self.max_size = max_size
 
     def add(self, item: str):
+        if(self.size() == self.max_size):
+            raise OverflowError("can't add more items")
         self.items.append(item)
 
     def size(self) -> int:

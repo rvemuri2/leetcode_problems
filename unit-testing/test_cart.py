@@ -1,10 +1,18 @@
 from cart import ShoppingCart
+import pytest
 def test_can_add_item_to_cart(): #needs test in the name of method to run test
-    cart = ShoppingCart()
+    cart = ShoppingCart(5)
     cart.add("apple")
     assert(cart.size() == 1)
 
 def test_when_item_added_then_cart_contains_item():
-    cart = ShoppingCart()
+    cart = ShoppingCart(5)
     cart.add("apple")
     assert "apple" in cart.get_items()
+
+def test_when_add_more_than_max_items_should_fail():
+    cart = ShoppingCart(5)
+    for i in range(5):
+        cart.add(str(i))
+    with pytest.raises(OverflowError):
+        cart.add("apple")
