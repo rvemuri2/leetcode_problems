@@ -1,5 +1,5 @@
-import streamlit as st
-import pandas as pd
+import streamlit as st # type: ignore
+import pandas as pd # type: ignore
 
 # App title
 st.title("CSV File Uploader and Viewer")
@@ -11,10 +11,12 @@ if uploaded_file is not None:
     # Read the uploaded CSV file
     try:
         df = pd.read_csv(uploaded_file)
+
+        flagged_high_transactions = df[df['amount'] > 300]
         
         # Display the dataframe
-        st.write("### Uploaded Data:")
-        st.dataframe(df)
+        st.write("### Flagged Transactions:")
+        st.dataframe(flagged_high_transactions)
         
     except Exception as e:
         st.error(f"An error occurred while processing the file: {e}")
