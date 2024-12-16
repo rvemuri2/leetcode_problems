@@ -26,8 +26,8 @@ def detect_excessive_transactions(df, transaction_limit=10):
 
 def detect_near_duplicate_transactions(df, time_delta_seconds=60):
     df = df.sort_values(by=['user_id', 'timestamp'])
-    df['time_diff'] = df.groupby('user_id')['timestamp'].diff().dt.total_seconds().abs()
-    duplicates = df[df['time_diff'] <= time_delta_seconds]
+    df['time_diff'] = df.groupby(['user_id', 'merchant_name', 'amount'])['timestamp'].diff().dt.total_seconds()
+    duplicates = df[df['time_diff'].abs() <= time_delta_seconds]
     return duplicates
 
 def detect_near_threshold_transactions(df, threshold=500, delta=30):
@@ -87,7 +87,7 @@ def main():
         # Rule 5: Near-Threshold Transactions
         delta = 500
         near_threshold_transactions = detect_near_threshold_transactions(df, threshold, delta)
-        st.write(f"### 5. Near-Threshold Transactions ({threshold - delta} ≤ Amount < {threshold})")
+        st.write(f"### 5. Near-Threshold Transactions")
         if not near_threshold_transactions.empty:
             st.dataframe(near_threshold_transactions)
         else:
