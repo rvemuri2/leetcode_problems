@@ -6,7 +6,7 @@ def load_csv(uploaded_file):
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     return df
 
-def detect_high_transaction_amount(df, threshold=300):
+def detect_high_transaction_amount(df, threshold=500):
     return df[df['amount'] > threshold]
 
 def detect_rapid_transactions(df, time_window_seconds=3000):
@@ -15,14 +15,25 @@ def detect_rapid_transactions(df, time_window_seconds=3000):
     return df[df['time_diff'] <= time_window_seconds]
 
 def detect_excessive_transactions(df, transaction_limit=10):
-    df['timestamp'] = pd.to_datetime(df['timestamp'])
-    df = df.sort_values(by=['user_id', 'timestamp'])
-    df['transaction_count'] = (
-        df.groupby('user_id')['timestamp']
-        .transform(lambda x: x.rolling('24h', on=x).count())
-    )
-    flagged = df[df['transaction_count'] > transaction_limit]
-    return flagged
+     df = df.sort_values(by=['user_id', 'timestamp'])
+    
+     results = []
+
+    # Iterate over each user group
+     for user_id, group in df.groupby('user_id', group_keys=False):  # Avoid re-adding group keys
+        group = group.set_index('timestamp')  # Set timestamp as index
+        group['transaction_count'] = group.rolling('1d').count()['user_id']  # Use rolling count
+        group = group.reset_index()  # Reset index to align with the original DataFrame
+        group['user_id'] = user_id  # Explicitly re-add user_id column
+        results.append(group)
+
+    # Concatenate results for all users
+     df = pd.concat(results)
+
+    # Filter rows where the transaction count exceeds the limit
+     flagged = df[df['transaction_count'] > transaction_limit]
+
+     return flagged
 
 def detect_near_duplicate_transactions(df, time_delta_seconds=60):
     df = df.sort_values(by=['user_id', 'timestamp'])
@@ -70,7 +81,7 @@ def main():
         #Rule 3: Transaction limits
         transaction_limit = 10
         excessive_transactions = detect_excessive_transactions(df, transaction_limit)
-        st.write(f"### 6. Excessive Transactions in 24-Hour Window (Limit > {transaction_limit})")
+        st.write(f"### 3. Excessive Transactions in 24-Hour Window (Limit > {transaction_limit})")
         if not excessive_transactions.empty:
             st.dataframe(excessive_transactions)
         else:
@@ -78,14 +89,14 @@ def main():
         
         #Rule 4: Detecting duplicate transactions
         duplicate_transactions = detect_near_duplicate_transactions(df, 60)
-        st.write("Duplicate Transactions") 
+        st.write("### 4.Duplicate Transactions") 
         if not duplicate_transactions.empty:
             st.dataframe(duplicate_transactions)
         else:
             st.write("No users flagged for duplicate transactions")
         
         # Rule 5: Near-Threshold Transactions
-        delta = 500
+        delta = 30
         near_threshold_transactions = detect_near_threshold_transactions(df, threshold, delta)
         st.write(f"### 5. Near-Threshold Transactions")
         if not near_threshold_transactions.empty:
